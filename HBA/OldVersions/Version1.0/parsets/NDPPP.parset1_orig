@@ -1,0 +1,12 @@
+msin=filename_SAP002_SB210_target_sub.MS.dppp
+msout=filename_SAP002_SB210_target_sub.MS.dppp.dppp
+msin.datacolumn = DATA
+msin.startchan = 0
+msin.nchan = 1
+
+steps = [preflag]  
+
+preflag.type=preflagger
+preflag.corrtype=cross
+preflag.baseline=[DE*,FR*,SE*,CS032*]
+

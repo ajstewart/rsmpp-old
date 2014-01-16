@@ -1,0 +1,14 @@
+Strategy.InputColumn = CORRECTED_DATA
+Strategy.TimeRange = []
+Strategy.Baselines = *&
+Strategy.ChunkSize = 100
+Strategy.UseSolver = F
+Strategy.Steps = [subtract]
+
+Step.subtract.Operation = SUBTRACT
+Step.subtract.Model.Sources = [CENTER]
+Step.subtract.Model.Beam.Enable = T
+Step.subtract.Model.Gain.Enable = T
+Step.subtract.Model.Beam.Mode = ARRAY_FACTOR
+Step.subtract.Output.Column = CORRECTED_DATA
+

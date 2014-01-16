@@ -1,0 +1,16 @@
+cellsize=18arcsec
+cyclefactor=1.5
+data=CORRECTED_DATA
+niter=6000
+npix=1600
+operation=csclean
+robust=0.000000
+#UVmax=2.46
+select="sumsqr(UVW[:2])<36.0e+06"
+stokes=I
+threshold=0.060000Jy
+StepApplyElement=0
+timewindow=300
+wmax=6000.000000
+wprojplanes=257
+padding=1.00000

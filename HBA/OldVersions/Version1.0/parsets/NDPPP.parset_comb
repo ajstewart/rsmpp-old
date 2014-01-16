@@ -1,0 +1,5 @@
+msin = filename_SAP000_SB*_target_sub.MS.dppp.dppp
+msin.datacolumn = CORRECTED_DATA
+#msin.baseline = [CR]S*&
+msout = filename_SAP000_SBcomb.MS.dppp
+steps = []

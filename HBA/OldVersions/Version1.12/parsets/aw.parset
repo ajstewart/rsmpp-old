@@ -1,0 +1,15 @@
+cellsize=30arcsec
+cyclefactor=1.5
+data=CORRECTED_DATA
+niter=3000
+npix=1024
+operation=csclean
+robust=0.000000
+UVmax=2.46
+stokes=I
+threshold=0.060000Jy
+StepApplyElement=0
+timewindow=300
+wmax=12000.000000
+wprojplanes=128
+padding=1.00000

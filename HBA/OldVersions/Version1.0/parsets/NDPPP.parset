@@ -1,0 +1,26 @@
+#Apply amplitude clipping to a calibrated measurement set to remove bad data points 
+msin.startchan = 0
+msin.nchan = 10
+msin = L42025_SAP000_SBcomb.MS.dppp
+msin.datacolumn = CORRECTED_DATA
+msout =                  #set blank if you want msout = msin 
+
+
+
+steps = [preflag, preflag2, preflag3]   # if defined as [] the MS will be copied and NaN/infinite will be  flagged
+
+#can set different amplitude cutoffs for different types of baselines 
+preflag.type=preflagger  
+preflag.corrtype=cross
+preflag.amplmax=700
+preflag.baseline=[ [CS*,CS*] ]
+
+preflag2.type=preflagger   
+preflag2.corrtype=cross
+preflag2.amplmax=700
+preflag2.baseline=[ [CS*,RS*] ]
+
+preflag3.type=preflagger   
+preflag3.corrtype=cross
+preflag3.amplmax=700
+preflag3.baseline=[ [RS*,RS*] ]
